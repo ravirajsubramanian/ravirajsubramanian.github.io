@@ -1,0 +1,170 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway";
+  font-weight: 300;
+  color: #333;
+}
+
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+a {
+  color: #bcaaa4;
+  word-wrap: break-word;
+}
+
+a:hover,
+a:focus {
+  color: #ffcc80;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.header {
+  background: #5d4037;
+  padding-top: 140px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 80px;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.header h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.header h3 a {
+  color: #fff;
+}
+
+.about {
+  background: #8d6e63;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.about h5,
+p {
+  color: white;
+}
+
+.about i {
+  color: white;
+  font-size: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+.footer {
+  background: #8d6e63;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer h5 {
+  color: white;
+}
+
+.footer t {
+  font-weight: 700;
+}
+
+.footer a {
+  margin: 2px;
+}
+
+.footer i {
+  padding-right: 8px;
+  color: #bcaaa4;
+}
+
+.footer i:hover,
+.footer i:focus {
+  color: #ffcc80;
+  text-decoration: none;
+  outline: 0;
+}
+
+.desc {
+  padding-top: 50px;
+}
+
+.desc p {
+  color: #2f2f2f;
+}
+
+.desc t {
+  color: #34495e;
+  font-weight: 700;
+}
+
+.desc imp {
+  padding: 6px;
+  color: white;
+  background: #34495e;
+}
+
+.desc more {
+  color: #616669;
+}
+
+sm {
+  font-size: 12px;
+}
+
+.desc .col-lg-3 {
+  text-transform: uppercase;
+}
+
+.container .row p.tight {
+  margin-bottom: 10px;
+}
