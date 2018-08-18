@@ -48,19 +48,6 @@ p {
   text-align: center;
 }
 
-a {
-  color: #bcaaa4;
-  word-wrap: break-word;
-  transition: 0.3s ease-in-out;
-}
-
-a:hover,
-a:focus {
-  color: #ffcc80;
-  text-decoration: none;
-  outline: 0;
-}
-
 hr {
   display: block;
   height: 1px;
@@ -180,6 +167,19 @@ sm {
   text-transform: uppercase;
 }
 
+.color-change {
+  color: #bcaaa4;
+  word-wrap: break-word;
+  transition: 0.3s ease-in-out;
+}
+
+.color-change:hover,
+.color-change:focus {
+  color: #ffcc80;
+  text-decoration: none;
+  outline: 0;
+}
+
 .container .row p.tight {
   margin-bottom: 10px;
 }
@@ -210,6 +210,33 @@ sm {
   animation: hiding 3s forwards;
 }
 
+.card {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 0;
+}
+
+.card .front {
+  position: absolute;
+}
+
+.card .back {
+  transform: rotateY(90deg);
+}
+
+.card:hover .front {
+  animation: flip 0.2s ease-in forwards;
+}
+
+.card:hover .back {
+  animation: flip 0.2s 0.2s ease-in forwards reverse;
+}
+
+/* Animations */
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -228,5 +255,14 @@ sm {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(90deg);
   }
 }
